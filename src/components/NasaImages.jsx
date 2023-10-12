@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import '../App.css'
 const API_KEY = 'pfOCjpXW6m2Ua9mDn0M4WwqUhSmQIHsrD9COBCch'; 
 
 const NasaImages = () => {
@@ -22,8 +22,7 @@ const NasaImages = () => {
   }, []);
 
   return (
-    <div>
-      <h1>NASA Images</h1>
+    <div className='App'>
       {images.map((image) => (
         <div key={image.date}>
           <h2>{image.title}</h2>

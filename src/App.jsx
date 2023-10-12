@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import NasaImages from './components/NasaImages';
 import Loading from './components/Loading';
-
+import Header from './components/Header';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -14,13 +14,21 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
+    <Header
+      foto = './logoInter.png'
+      />
+    
+    <div>
       {isLoading ? (
-        <Loading />
-      ) : (
-        <NasaImages />
-      )}
+        <Loading 
+        foto= './logoInter.png'
+        />
+        ) : (
+          <NasaImages />
+          )}
     </div>
+          </>
   );
 }
 

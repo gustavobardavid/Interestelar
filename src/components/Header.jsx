@@ -9,7 +9,6 @@ function Header({foto}) {
       <div className="logo">
         <h1>Interestelar</h1>
       </div>
-    <p>Uma viagem para fora da Terra</p>
     </header>
   );
 }

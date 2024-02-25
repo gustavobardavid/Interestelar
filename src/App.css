@@ -4,6 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+::-webkit-scrollbar {
+  width: 10px; 
+}
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+::-webkit-scrollbar-thumb {
+  background: #05003d;
+  border-radius: 6px; 
+}
 
 .logo {
   height: 5em;

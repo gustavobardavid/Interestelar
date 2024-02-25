@@ -9,8 +9,8 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false); // Simulando o término do carregamento após 2 segundos
-    }, 2000);
+      setIsLoading(false); 
+    }, 3000);
   }, []);
 
   return (

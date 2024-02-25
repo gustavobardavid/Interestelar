@@ -7,7 +7,7 @@ function Header({foto}) {
     <header className="header">
         <img src={foto} alt="" />
       <div className="logo">
-        <h1>Interestelar</h1>
+        <h1>Interstellar</h1>
       </div>
     </header>
   );

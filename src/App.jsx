@@ -1,34 +1,15 @@
-
-import { useState, useEffect } from 'react';
 import './App.css';
-import NasaImages from './components/NasaImages';
-import Loading from './components/Loading';
-import Header from './components/Header';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false); 
-    }, 3000);
-  }, []);
-
+    //T0-DO search (?)
   return (
-    <>
-    <Header
-      foto = './logoInter.png'
-      />
-    
-    <div>
-      {isLoading ? (
-        <Loading 
-        foto= './logoInter.png'
-        />
-        ) : (
-          <NasaImages />
-          )}
-    </div>
-          </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
